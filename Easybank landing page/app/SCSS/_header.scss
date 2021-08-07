@@ -22,6 +22,12 @@
   &__links {
     a {
       font-size: $font-sm;
+      color: $grayishBlue;
     }
+  }
+
+  &__cta {
+    font-size: $font-sm;
+    color: $white;
   }
 }

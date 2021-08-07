@@ -12,6 +12,7 @@ body {
   padding: 0;
   font-size: 1.125rem;
   font-family: "Public Sans", sans-serif;
+  font-weight: 300;
   color: $lightGrayishBlue;
   line-height: 1.3;
 }
@@ -20,7 +21,6 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: $grayishBlue;
 }
 
 // flexbox styling
@@ -48,4 +48,6 @@ button,
   cursor: pointer;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
   border: none;
+  font-weight: 400;
+  color: $white;
 }
