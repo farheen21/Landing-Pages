@@ -43,7 +43,7 @@ a:hover {
 
 button,
 .button {
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 2.1875rem;
   border-radius: 50px;
   cursor: pointer;
   background: linear-gradient(to right, #31d35c, #2bb7da);
@@ -64,12 +64,13 @@ button,
   }
 }
 
-.header__logo {
-  padding: auto;
+.header__logo img {
+  width: 8.8125rem;
+  height: 1.375rem;
 }
 
 .header nav {
-  padding: 23px;
+  padding: 1.0625rem 1.5rem;
 }
 
 .header__menu > span {
@@ -86,10 +87,42 @@ button,
 .header__links a {
   font-size: 0.875rem;
   color: #9698a6;
+  transition: color 300ms ease-in-out;
+  position: relative;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.header__links a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__links a:hover {
+  color: #2d314d;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
 }
 
 .header__cta {
   font-size: 0.875rem;
   color: white;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__cta:hover {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=style.css.map */
