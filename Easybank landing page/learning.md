@@ -13,3 +13,4 @@
 | min-width<br>max- width                   | device width is greater than or equal to<br>less than or equal to<br>                                                           |
 | transition:to whom , duration , animation | can be used to make some dealy in aniamtion rather than making it instantenous                                                  |
 | Fallback Colours                          | Used as a clever technique when your images takes time to load on site https://css-tricks.com/css-basics-using-fallback-colors/ |
+| @Keyframes                                | this indicate the css animations start and end states, as well as the possible intermediate waypoint points                     |

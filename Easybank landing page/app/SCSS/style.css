@@ -1,3 +1,10 @@
+@keyframes fade-in {
+  from {
+  }
+  to {
+  }
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -77,6 +84,7 @@ button,
 }
 
 .header .overlay {
+  display: none;
   position: fixed;
   top: 3.8125rem;
   left: 0px;
