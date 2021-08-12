@@ -1,5 +1,10 @@
 @keyframes fade-in {
   from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
     opacity: 0;
   }
   to {
@@ -13,9 +18,15 @@
 
 @keyframes fade-out {
   from {
+    visibility: visible;
     opacity: 1;
   }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
   to {
+    visibility: hidden;
     opacity: 0;
   }
 }
@@ -49,6 +60,11 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .flex {
@@ -94,20 +110,19 @@ button,
   display: block;
 }
 
-.header.open .header__menu > span:first-child {
+.header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
 }
 
-.header.open .header__menu > span:nth-child(2) {
+.header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
 
-.header.open .header__menu > span:last-child {
+.header.open .header__toggle > span:last-child {
   transform: rotate(-45deg);
 }
 
 .header .overlay {
-  display: none;
   opacity: 0;
   position: fixed;
   top: 3.75rem;
@@ -123,10 +138,11 @@ button,
 }
 
 .header nav {
-  padding: 1.0625rem 1.5rem;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }
 
-.header__menu > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -135,8 +151,20 @@ button,
   transform-origin: 3px 1px;
 }
 
-.header__menu > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header__menu {
+  background: white;
+  padding: 1.625rem;
+}
+
+.header__menu a {
+  padding: 0.625rem;
+  color: #2d314d;
+  display: block;
+  text-align: center;
 }
 
 .header__links a {
