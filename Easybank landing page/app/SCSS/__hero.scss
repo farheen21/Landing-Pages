@@ -1,0 +1,11 @@
+.hero {
+  &__image {
+    background-image: url("../../images/bg-intro-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__text {
+  }
+}
